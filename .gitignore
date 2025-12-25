@@ -14,7 +14,7 @@ venv/
 # data/image/
 # data/video/
 # 如果你想保留自定义数据集的结构，可以只忽略图片，保留yaml
-data/custom_dataset/images/
+# data/custom_dataset/images/
 # 忽略官方权重文件 (太大了)
 # *.pt
 # models/*.pt
