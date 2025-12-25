@@ -1,0 +1,16 @@
+path: /data1/kechuang25/02_User_Zones/hyq_zone/03_Coursework/my_yolo/data/custom_dataset
+train: images/train
+val: images/valid
+test: images/test
+nc: 10
+names:
+- Cooked Pasta
+- Cuttingboard
+- Garlic
+- Oil
+- Pepper
+- Plate
+- Pot
+- Salt
+- Spaghetti Noodle
+- Tong

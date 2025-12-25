@@ -1,0 +1,59 @@
+# YOLO目标检测项目配置文件
+
+# 模型配置
+models:
+  yolov8n: "yolov8n.pt"  # 最小模型，速度最快
+  yolov8s: "yolov8s.pt"  # 小模型
+  yolov8m: "yolov8m.pt"  # 中等模型
+  default: "yolov8n.pt"  # 默认使用的模型
+
+# 路径配置
+paths:
+  weights: "weights"  # 模型权重目录
+  datasets: "datasets"  # 数据集目录
+  outputs: "outputs"  # 输出目录
+  results: "results"  # 结果目录
+  logs: "logs"  # 日志目录
+
+# 检测配置
+detection:
+  conf_threshold: 0.25  # 置信度阈值
+  iou_threshold: 0.45  # NMS的IOU阈值
+  max_det: 300  # 最大检测数量
+  img_size: 640  # 输入图像大小
+
+# 训练配置
+training:
+  epochs: 100  # 训练轮数
+  batch_size: 16  # 批次大小
+  img_size: 640  # 训练图像大小
+  patience: 50  # 早停耐心值
+  save_period: 10  # 保存模型的周期
+  workers: 8  # 数据加载的工作线程数
+  lr0: 0.01  # 初始学习率
+  lrf: 0.01  # 最终学习率（相对于初始学习率的比例）
+
+# 性能测试配置
+benchmark:
+  warmup_runs: 10  # 预热运行次数
+  test_runs: 100  # 测试运行次数
+  test_image: "assets/test.jpg"  # 测试图像路径
+
+# 应用配置
+applications:
+  counter:
+    classes: ["person", "car", "bicycle"]  # 计数的类别
+    line_position: 0.5  # 计数线位置（归一化）
+  safety:
+    alert_classes: ["person", "car"]  # 安全警报的类别
+    alert_threshold: 3  # 警报阈值（检测到的物体数量）
+  interactive:
+    default_classes: ["person", "car", "dog", "cat"]  # 默认检测类别
+
+# 可视化配置
+visualization:
+  line_thickness: 2  # 边界框线宽
+  font_scale: 0.5  # 字体大小
+  show_conf: true  # 是否显示置信度
+  show_class: true  # 是否显示类别名称
+  colors: "auto"  # 颜色方案（auto或自定义列表）

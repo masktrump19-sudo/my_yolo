@@ -1,0 +1,29 @@
+# YOLO目标检测项目依赖
+
+# 核心依赖
+ultralytics>=8.0.0  # YOLOv8官方库
+opencv-python>=4.8.0  # 图像和视频处理
+numpy>=1.24.0  # 数值计算
+pillow>=10.0.0  # 图像处理
+torch>=2.0.0  # PyTorch深度学习框架
+torchvision>=0.15.0  # PyTorch视觉库
+
+# 数据可视化
+matplotlib>=3.7.0  # 绘图库
+seaborn>=0.12.0  # 统计可视化
+plotly>=5.14.0  # 交互式可视化
+pandas>=2.0.0  # 数据分析
+
+# 进度显示
+tqdm>=4.65.0  # 进度条
+
+# 图像标注（可选）
+labelImg>=1.8.6  # 图像标注工具
+
+# Web应用框架
+streamlit>=1.28.0  # Web应用开发框架（Task 4）
+gradio>=4.0.0  # 机器学习模型Web UI（可选）
+
+# 工具库
+pyyaml>=6.0  # YAML配置文件解析
+python-dotenv>=1.0.0  # 环境变量管理
