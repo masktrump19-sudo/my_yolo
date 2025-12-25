@@ -10,17 +10,17 @@ venv/
 
 # --- YOLO/深度学习 特定忽略 ---
 # 忽略所有数据集 (太大了，用户应该自己下载)
-datasets/
-data/image/
-data/video/
+# datasets/
+# data/image/
+# data/video/
 # 如果你想保留自定义数据集的结构，可以只忽略图片，保留yaml
 data/custom_dataset/images/
 # 忽略官方权重文件 (太大了)
-*.pt
-models/*.pt
+# *.pt
+# models/*.pt
 # 忽略训练产生的大量日志和结果 (只保留最好的权重或结果图，或者完全忽略)
-runs/
-results/
+# runs/
+# results/
 # 但保留 results 下的 markdown 报告和必要的截图
 !results/**/*.md
 !results/**/*.png
