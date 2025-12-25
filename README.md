@@ -19,8 +19,9 @@ my_yolo/
 │   ├── video/                  # Task 1 测试视频
 │   └── custom_dataset/         # Task 2 自定义数据集 (需标注)
 |—— dataset/
-|   ├── coco128/                  # Task 3 测试图片
-|   |
+|   └── coco128/                  # Task 3 测试图片
+|         ├── images/             
+│         └── labels/
 │   
 ├── docs/                       # 项目文档
 │   ├── environment_setup.md    # 环境安装指南
